@@ -143,12 +143,6 @@ void print_long_vector ( long * result , int size ) {
 	printf ("]\n");
 }
 
-/*int main(){
-	char hello[6]="hello";
-	printf("%d\n",strlen(hello));
-	return 0;
-}*/
-
 int main (){
 	srand ( time ( NULL ) ) ;
 
@@ -171,7 +165,7 @@ int main (){
 	printf ("cle privee=(%ld, %ld)\n", u, n);
 
 	//Chiffrement:
-	char mess [1000] = "J'ai envie de manger des chips mec.";
+	char mess [10] = "JHello.";
 	int len = strlen ( mess ) ;
 	long * crypted = encrypt ( mess , s , n ) ;
 
